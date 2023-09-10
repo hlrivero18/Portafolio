@@ -10,7 +10,7 @@ export default function Page() {
                    <Name /> 
                 </div>
                 <div className="font-oswald text-lg text-center">
-                    <p>"I am a javascript developer and my mission is overcome myself."
+                    <p>I am a javascript developer and my mission is overcome myself.
                     </p>
                 </div>
             </div>
