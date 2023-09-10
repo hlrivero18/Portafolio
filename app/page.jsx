@@ -1,5 +1,6 @@
 import React from "react";
 import Name from "@/Components/Name/Name";
+import 'tailwindcss/tailwind.css'
 
 export default function Page() {
 
