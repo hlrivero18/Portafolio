@@ -1,6 +1,13 @@
 import React from "react";
 import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 import style from "./Name.module.css"
+//GOOGLE FONT
+import {Oswald} from "next/font/google"
+
+const oswald = Oswald({
+    weight:["400"],
+    subsets: ["latin"]
+})
 
 export default function Name() {
     return (
@@ -8,7 +15,7 @@ export default function Name() {
             <span className={`text-7xl ${style.name}`}>
                 Hi, I'm <br className="md:hidden" /> Hector Luis!
             </span>
-            <p className="text-xl font-oswald">Full Stack Web Developer</p>
+            <p className={`${oswald.className} text-xl`}>Full Stack Web Developer</p>
             <div className="w-full flex justify-around text-4xl">
                 <a className="rounded-full hover:bg-gray-400 w-10 h-10 inline-flex justify-center items-center" href="https://www.instagram.com/hlrivero18/" target="_blank">
                     <BiLogoInstagram />

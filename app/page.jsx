@@ -1,6 +1,13 @@
 import React from "react";
 import Name from "@/Components/Name/Name";
 import 'tailwindcss/tailwind.css'
+//GOOGLE FONT
+import {Oswald} from "next/font/google"
+
+const oswald = Oswald({
+    weight:["400"],
+    subsets: ["latin"]
+})
 
 export default function Page() {
 
@@ -10,7 +17,7 @@ export default function Page() {
                 <div>
                    <Name /> 
                 </div>
-                <div className="font-oswald text-lg text-center">
+                <div className={`${oswald.className} text-lg text-center`}>
                     <p>I am a javascript developer and my mission is overcome myself.
                     </p>
                 </div>
